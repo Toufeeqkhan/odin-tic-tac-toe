@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,39 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <img src="./assets/Group 8logo-white.svg" alt="Tic Tac Toe">
     </nav>
-
+    <button class="reset-button">Reset</button>
     <main>
-        <div class="score-x">
+        <div class="score-x" >
             <h1>Score-<span>X</span></h1>
-            <h1>9</h1>
+            <h1 id="x-score">0</h1>
         </div>
         <div class="container">
             <div class="inner-container">
-                <div class="selected-x cell">
-                    <img  src="./assets/x-symbol-svgrepo-com.svg" alt="X">
-                </div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class=" selected-o cell">
-                    <div class=" circle"></div>
-                </div>
-                <div class="cell"></div>
-                <div class="cell "><img class="dim"  src="./assets/x-symbol-svgrepo-com.svg" alt="X"></div>
-                <div class="cell"></div>
-                <div class="cell"><div class="dim circle"></div></div>
+                <div data-cell="0" class="cell"></div>
+                <div data-cell="1" class="cell"></div>
+                <div data-cell="2" class="cell"></div>
+                <div data-cell="3" class="cell"></div>
+                <div data-cell="4" class="cell"></div>
+                <div data-cell="5" class="cell"></div>
+                <div data-cell="6" class="cell"></div>
+                <div data-cell="7" class="cell"></div>
+                <div data-cell="8" class="cell"></div>
             </div>
         </div>
-        <div class="score-o">
+        <div class="score-o" >
             <h1>Score-<span>O</span></h1>
-            <h1>6</h1>
+            <h1 id="o-score">0</h1>
         </div>
     </main>
+<footer>
+    
+</footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
